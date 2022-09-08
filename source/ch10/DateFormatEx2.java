@@ -5,7 +5,7 @@ class DateFormatEx2 {
 	public static void main(String[] args) {
 		// Calendar와 Date간의 변환은 다음과 같이 한다.
 		Calendar cal = Calendar.getInstance();
-		cal.set(2005, 9, 3);	// 2005년 10월 3일 - Month는 0~11의 범위를 갖는다.
+		cal.set(2005, 9, 3); // 2005년 10월 3일 - Month는 0~11의 범위를 갖는다.
 
 		Date day = cal.getTime();
 
