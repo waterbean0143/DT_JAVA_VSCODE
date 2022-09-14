@@ -10,19 +10,19 @@ public class ExpValidCheck {
             System.exit(0);
         }
 
-        Stack st = new Stack(); // 스택 생성
+        Stack st = new Stack();
         String expression = args[0];
 
         System.out.println("expression:" + expression);
 
         try {
-            for (int i = 0; i < expression.length(); i++) { // 문자열로 배열 생성해서 집어넣기
+            for (int i = 0; i < expression.length(); i++) {
                 char ch = expression.charAt(i);
 
-                if (ch == '(') { // ( 괄호 캐치해서 카운트
-                    st.push(ch + ""); // pop 전까지는 그다음 문자열들 전부 스택에 넣기
-                } else if (ch == ')') {// ) 괄호 캐치해서 멈추고
-                    st.pop(); // 스택에 모인 ( ) 안의 내용물 pop
+                if (ch == '(') {
+                    st.push(ch + "");
+                } else if (ch == ')') {
+                    st.pop();
                 }
             }
 

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ExpValidCheck",
+            "request": "launch",
+            "mainClass": "ch11.ExpValidCheck",
+            "projectName": "WB_Java_for_dummies"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayListLinkedListTest",
             "request": "launch",
             "mainClass": "ch11.ArrayListLinkedListTest",
