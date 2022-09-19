@@ -34,7 +34,7 @@ class FruitBoxEx1 {
         // Box<Grape> grapeBox = new Box<Apple>(); // 에러. 타입 불일치
 
         fruitBox.add(new Fruit());
-        fruitBox.add(new Apple()); // OK. void add(Fruit item)
+        fruitBox.add(new Apple()); // OK. void add(Fruit item)->왜 만들때는 다형성이 적용되지 않는가?->원시타입만 적용 신경쓴다.
 
         appleBox.add(new Apple());
         appleBox.add(new Apple());
@@ -47,6 +47,7 @@ class FruitBoxEx1 {
         System.out.println(appleBox);
         System.out.println(toyBox);
     } // main의 끝
+
 }
 
 class Box<T> {
